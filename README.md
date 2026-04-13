@@ -22,6 +22,8 @@ GitHubのブランチドロップダウンには新旧2種類のUIがあり、�
 | 旧UI (SelectMenu形式) | `.SelectMenu-modal` | 幅を500pxに拡張 |
 | 新UI (Primer / Overlay形式) | `.Overlay--size-*` | 横スクロールで全表示 |
 
+![alt text](image.png)
+
 ## 幅のカスタマイズ
 
 旧UIは `content.css` 内の `500px` を変更することで幅を調整できます。
