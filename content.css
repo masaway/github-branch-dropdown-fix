@@ -1,0 +1,41 @@
+/* ===================================================
+   GitHub Branch Dropdown Fix
+   =================================================== */
+
+/* ========== 旧UI (SelectMenu形式) ========== */
+
+/* モーダル本体を広げる */
+.SelectMenu-modal {
+  width: 500px !important;
+  min-width: 500px !important;
+}
+
+/* ブランチ名の省略（...）を無効化 */
+.SelectMenu-item .css-truncate-overflow,
+.SelectMenu-list .css-truncate-overflow {
+  overflow: visible !important;
+  text-overflow: unset !important;
+  max-width: none !important;
+  white-space: nowrap !important;
+}
+
+/* ========== 新UI (Primer / Overlay形式) ========== */
+
+/* Overlayコンテナを広げる */
+.Overlay--size-medium,
+.Overlay--size-small,
+.Overlay--size-large {
+  width: 500px !important;
+  max-width: 500px !important;
+}
+
+/* ブランチ名のoverflow: hidden（インラインスタイル）を上書き */
+.HighlightedText-module__HighlightedText__No12X {
+  overflow: visible !important;
+  white-space: nowrap !important;
+}
+
+/* ブランチ名を囲むflexコンテナのmin-width: 0pxによる圧縮を解除 */
+.prc-ActionList-ItemLabel-81ohH > div > div {
+  min-width: max-content !important;
+}

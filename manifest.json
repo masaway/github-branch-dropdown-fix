@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Branch Dropdown Fix",
+  "version": "1.0.0",
+  "description": "GitHubのブランチ選択プルダウンでブランチ名が長くても見切れないようにCSSを上書きする",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "GitHub Branch Dropdown Fix"
+  }
+}
